@@ -28,6 +28,8 @@ public interface SqlSession {
      */
     <T> T selectOne(String statement, Object parameter);
 
+    Configuration getConfiguration();
+
     /**
      * 获得映射器，这个方法巧妙的使用了泛型，使类型安全
      * @param type

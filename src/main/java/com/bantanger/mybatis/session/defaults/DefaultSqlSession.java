@@ -1,6 +1,7 @@
 package com.bantanger.mybatis.session.defaults;
 
-import com.bantanger.mybatis.binding.MapperRegistry;
+import com.bantanger.mybatis.mapping.MappedStatement;
+import com.bantanger.mybatis.session.Configuration;
 import com.bantanger.mybatis.session.SqlSession;
 
 /**
@@ -10,13 +11,10 @@ import com.bantanger.mybatis.session.SqlSession;
  */
 public class DefaultSqlSession implements SqlSession {
 
-    /**
-     * 映射器注册机
-     */
-    private MapperRegistry mapperRegistry;
+    private Configuration configuration;
 
-    public DefaultSqlSession(MapperRegistry mapperRegistry) {
-        this.mapperRegistry = mapperRegistry;
+    public DefaultSqlSession(Configuration configuration) {
+        this.configuration = configuration;
     }
 
     @Override
@@ -26,12 +24,18 @@ public class DefaultSqlSession implements SqlSession {
 
     @Override
     public <T> T selectOne(String statement, Object parameter) {
-        return (T) ("你被代理了！" + "方法：" + statement + " 入参：" + parameter);
+        MappedStatement mappedStatement = configuration.getMappedStatement(statement);
+        return (T) ("你被代理了！" + "\n方法：" + statement + "\n入参：" + parameter + "\n待执行SQL：" + mappedStatement.getSql());
+    }
+
+    @Override
+    public Configuration getConfiguration() {
+        return configuration;
     }
 
     @Override
     public <T> T getMapper(Class<T> type) {
-        return mapperRegistry.getMapper(type, this);
+        return configuration.getMapper(type, this);
     }
 
 }
