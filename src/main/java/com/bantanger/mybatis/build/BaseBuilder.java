@@ -1,6 +1,7 @@
 package com.bantanger.mybatis.build;
 
 import com.bantanger.mybatis.session.Configuration;
+import com.bantanger.mybatis.type.TypeAliasRegistry;
 
 /**
  * @author BanTanger 半糖
@@ -9,9 +10,11 @@ import com.bantanger.mybatis.session.Configuration;
 public abstract class BaseBuilder {
 
     protected final Configuration configuration;
+    protected final TypeAliasRegistry typeAliasRegistry;
 
     public BaseBuilder(Configuration configuration) {
         this.configuration = configuration;
+        this.typeAliasRegistry = this.configuration.getTypeAliasRegistry();
     }
 
     public Configuration getConfiguration() {

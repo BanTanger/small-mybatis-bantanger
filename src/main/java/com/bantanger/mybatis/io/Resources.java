@@ -10,7 +10,7 @@ import java.io.Reader;
  * @author BanTanger 半糖
  * @Date 2023/3/13 13:21
  */
-public class Resource {
+public class Resources {
 
     public static Reader getResourceAsReader(String resource) throws IOException {
         return new InputStreamReader(getResourceAsStream(resource));
