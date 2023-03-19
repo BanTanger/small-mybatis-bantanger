@@ -2,6 +2,8 @@ package com.bantanger.mybatis.session;
 
 import com.bantanger.mybatis.binding.MapperRegistry;
 import com.bantanger.mybatis.dataSource.druid.DruidDataSourceFactory;
+import com.bantanger.mybatis.dataSource.pooled.PooledDataSourceFactory;
+import com.bantanger.mybatis.dataSource.unpooled.UnpooledDataSourceFactory;
 import com.bantanger.mybatis.mapping.Environment;
 import com.bantanger.mybatis.mapping.MappedStatement;
 import com.bantanger.mybatis.transaction.jdbc.JdbcTransactionFactory;
@@ -12,6 +14,7 @@ import java.util.Map;
 
 /**
  * MyBatis 核心存储对象的配置类
+ * 存储 mybatis-config-datasource 解析的内容
  * @author BanTanger 半糖
  * @Date 2023/3/13 13:00
  */
@@ -33,13 +36,15 @@ public class Configuration {
     protected final TypeAliasRegistry typeAliasRegistry = new TypeAliasRegistry();
 
     /**
-     * 映射语句存储 Map 中
+     * 解析 mapper.xml 配置文件中解析出来的 sql 语句
      */
     protected final Map<String, MappedStatement> mappedStatements = new HashMap<>();
 
     public Configuration() {
         typeAliasRegistry.registerAlias("JDBC", JdbcTransactionFactory.class);
         typeAliasRegistry.registerAlias("DRUID", DruidDataSourceFactory.class);
+        typeAliasRegistry.registerAlias("POOLED", PooledDataSourceFactory.class);
+        typeAliasRegistry.registerAlias("UNPOOLED", UnpooledDataSourceFactory.class);
     }
 
     public void addMappers(String packageName) {

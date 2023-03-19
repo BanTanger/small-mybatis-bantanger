@@ -12,11 +12,21 @@ import java.io.Reader;
  */
 public class SqlSessionFactoryBuilder {
 
+    /**
+     * 解析配置文件（dom4j + xpath），封装 Configuration
+     * @param reader
+     * @return
+     */
     public SqlSessionFactory build(Reader reader) {
         XMLConfigBuilder xmlConfigBuilder = new XMLConfigBuilder(reader);
         return build(xmlConfigBuilder.parse());
     }
 
+    /**
+     * 创建 SqlSessionFactory 对象（调度默认工厂）
+     * @param config
+     * @return
+     */
     public SqlSessionFactory build(Configuration config) {
         return new DefaultSqlSessionFactory(config);
     }

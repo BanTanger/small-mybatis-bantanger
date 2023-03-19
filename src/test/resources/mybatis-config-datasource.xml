@@ -6,7 +6,8 @@
     <environments default="development">
         <environment id="development">
             <transactionManager type="JDBC"/>
-            <dataSource type="DRUID">
+<!--            <dataSource type="UNPOOLED">-->
+            <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
                 <property name="url" value="jdbc:mysql://127.0.0.1:3306/jdbc?useUnicode=true"/>
                 <property name="username" value="root"/>
@@ -15,6 +16,10 @@
         </environment>
     </environments>
 
+    <!--
+    MyBatis框架只会加载这个 mybatis-config-datasource.xml 配置文件，
+    对应的 mapper 集成在这里，这样的好处是只调用一次 getResourceAsStream(String resource)
+    -->
     <mappers>
         <mapper resource="mapper/User_Mapper.xml"/>
     </mappers>

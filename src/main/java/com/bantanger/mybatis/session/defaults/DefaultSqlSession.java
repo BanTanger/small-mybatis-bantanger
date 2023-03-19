@@ -33,6 +33,7 @@ public class DefaultSqlSession implements SqlSession {
     @Override
     public <T> T selectOne(String statement, Object parameter) {
         try {
+            // TODO 之后会将具体的 JDBC 代码 委派给执行器 Executor 完成，进一步降低耦合
             MappedStatement mappedStatement = configuration.getMappedStatement(statement);
             Environment environment = configuration.getEnvironment();
 
