@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-21T08:01:28.328Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="qmzqIJhKiT8i_KSkkqt1" version="21.0.8" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-03-21T08:05:31.690Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="YN7kEf7mR4TAOoNM33AS" version="21.0.8" type="github" pages="3">
   <diagram name="第 1 页" id="uOfneBi-ThzCcZW6oW6N">
     <mxGraphModel dx="1434" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -208,16 +208,16 @@
         <mxCell id="7CbhMVBoUjyMyCIt36Ix-1" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 20px;&quot;&gt;手写持久层框架 MyBatis 思路分析&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="-260" y="120" width="1160" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="7CbhMVBoUjyMyCIt36Ix-2" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 20px;&quot;&gt;手写持久层框架 MyBatis 思路分析&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-2" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;用户需配置、引入自定义层的 jar 包&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="-260" y="190" width="380" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="7CbhMVBoUjyMyCIt36Ix-3" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 20px;&quot;&gt;手写持久层框架 MyBatis 思路分析&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-3" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 20px;&quot;&gt;自定义持久层框架本身，底层是对 JDBC 的封装调用&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="130" y="190" width="770" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="7CbhMVBoUjyMyCIt36Ix-4" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 20px;&quot;&gt;手写持久层框架 MyBatis 思路分析&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;arcSize=5;" vertex="1" parent="1">
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-4" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;创建 mybatis-config-datasource 总配置&lt;br&gt;包含数据库配置信息：&lt;br&gt;username、passward、url、driver&lt;br&gt;以及各种 mapper.xml 配置文件&lt;br&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;arcSize=5;" vertex="1" parent="1">
           <mxGeometry x="-260" y="260" width="380" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="7CbhMVBoUjyMyCIt36Ix-6" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 20px;&quot;&gt;手写持久层框架 MyBatis 思路分析&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;arcSize=5;" vertex="1" parent="1">
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-6" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;创建各种 mapper.xml 配置文件&lt;br&gt;存放 sql 信息、参数类型、返回值类型&lt;br&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;arcSize=5;" vertex="1" parent="1">
           <mxGeometry x="-260" y="530" width="380" height="260" as="geometry" />
         </mxCell>
         <mxCell id="7CbhMVBoUjyMyCIt36Ix-7" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 20px;&quot;&gt;手写持久层框架 MyBatis 思路分析&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;arcSize=5;" vertex="1" parent="1">
