@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-03-21T08:05:31.690Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="YN7kEf7mR4TAOoNM33AS" version="21.0.8" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-03-21T08:36:52.448Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="tLianRA2XIlTm18_mYHW" version="21.0.8" type="github" pages="3">
   <diagram name="第 1 页" id="uOfneBi-ThzCcZW6oW6N">
     <mxGraphModel dx="1434" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -201,30 +201,66 @@
     </mxGraphModel>
   </diagram>
   <diagram id="cABLiSkT23ZcIkIfKkNs" name="第 3 页">
-    <mxGraphModel dx="2261" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3860" dy="1163" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="7CbhMVBoUjyMyCIt36Ix-1" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 20px;&quot;&gt;手写持久层框架 MyBatis 思路分析&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="-260" y="120" width="1160" height="60" as="geometry" />
+          <mxGeometry x="-260" y="120" width="1230" height="60" as="geometry" />
         </mxCell>
         <mxCell id="7CbhMVBoUjyMyCIt36Ix-2" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;用户需配置、引入自定义层的 jar 包&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="-260" y="190" width="380" height="60" as="geometry" />
         </mxCell>
         <mxCell id="7CbhMVBoUjyMyCIt36Ix-3" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 20px;&quot;&gt;自定义持久层框架本身，底层是对 JDBC 的封装调用&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="130" y="190" width="770" height="60" as="geometry" />
+          <mxGeometry x="130" y="190" width="840" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="7CbhMVBoUjyMyCIt36Ix-4" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;创建 mybatis-config-datasource 总配置&lt;br&gt;包含数据库配置信息：&lt;br&gt;username、passward、url、driver&lt;br&gt;以及各种 mapper.xml 配置文件&lt;br&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;arcSize=5;" vertex="1" parent="1">
-          <mxGeometry x="-260" y="260" width="380" height="260" as="geometry" />
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-4" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;arcSize=4;" vertex="1" parent="1">
+          <mxGeometry x="-260" y="260" width="380" height="700" as="geometry" />
         </mxCell>
-        <mxCell id="7CbhMVBoUjyMyCIt36Ix-6" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;创建各种 mapper.xml 配置文件&lt;br&gt;存放 sql 信息、参数类型、返回值类型&lt;br&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;arcSize=5;" vertex="1" parent="1">
-          <mxGeometry x="-260" y="530" width="380" height="260" as="geometry" />
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-7" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;arcSize=2;" vertex="1" parent="1">
+          <mxGeometry x="130" y="260" width="840" height="700" as="geometry" />
         </mxCell>
-        <mxCell id="7CbhMVBoUjyMyCIt36Ix-7" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 20px;&quot;&gt;手写持久层框架 MyBatis 思路分析&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;arcSize=5;" vertex="1" parent="1">
-          <mxGeometry x="130" y="260" width="770" height="260" as="geometry" />
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-9" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 20px;&quot;&gt;1.加载配置文件&lt;br&gt;创建 Resource 类：负责加载配置文件，将文件加载成字节输入流，存入到内存中&lt;br&gt;方法：InputStream.getResourceAsStream(String path)&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="170" y="270" width="740" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="7CbhMVBoUjyMyCIt36Ix-8" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 20px;&quot;&gt;手写持久层框架 MyBatis 思路分析&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;arcSize=5;" vertex="1" parent="1">
-          <mxGeometry x="130" y="530" width="770" height="260" as="geometry" />
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-10" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 20px;&quot;&gt;2.创建两个 Bean 对象&lt;br&gt;Configuration：全局配置类，存储 mybatis-config-datasource 总配置文件解析的内容&lt;br&gt;MappedStatement: 映射配置类，存储 mapper.xml 配置文件所解析出来的内容&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="170" y="370" width="790" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-11" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 20px;&quot;&gt;3. 解析配置文件，填充容器对象&lt;br&gt;创建 SqlSessionFactoryBuilder 类，&lt;br&gt;通过字节流传输的方式，将解析的内容存储到 SqlSession 中&lt;br&gt;方法：SqlSessionFactory.build(InputStream)&lt;br&gt;1). 解析配置文件（dom4j + xpath），将信息存储到 Configuration 中&lt;br&gt;2). 创建 SqlSessionFactory&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="170" y="480" width="640" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-14" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;2).创建各种 mapper.xml 配置文件&lt;br style=&quot;border-color: var(--border-color); font-family: &amp;quot;Comic Sans MS&amp;quot;;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Comic Sans MS&amp;quot;;&quot;&gt;存放 sql 信息、参数类型、返回值类型&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-255" y="670" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-15" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 20px;&quot;&gt;1). 创建 mybatis-config-datasource &lt;br&gt;总配置文件,包含数据库配置信息：&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;username、passward、url、driver&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;以及各种 mapper.xml 配置文件&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-245" y="390" width="350" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-17" value="&lt;pre style=&quot;background-color:#263238;color:#c3cee3;font-family:&#39;DejaVu Sans Mono&#39;,monospace;font-size:13.5pt;&quot;&gt;&lt;span style=&quot;color:#fb8647;font-style:italic;&quot;&gt;public &lt;/span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;Configuration &lt;/span&gt;&lt;span style=&quot;color:#82aaff;&quot;&gt;parse&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;() &lt;/span&gt;&lt;span style=&quot;color:#527c4c;&quot;&gt;{&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#527c4c;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color:#fb8647;font-style:italic;&quot;&gt;try &lt;/span&gt;&lt;span style=&quot;color:#527c4c;&quot;&gt;{&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#527c4c;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot;color:#fb8647;font-style:italic;&quot;&gt;// &lt;/span&gt;&lt;span style=&quot;color:#fb8647;font-style:italic;font-family:&#39;宋体&#39;,monospace;&quot;&gt;环境&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#fb8647;font-style:italic;font-family:&#39;宋体&#39;,monospace;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot;color:#82aaff;&quot;&gt;environmentsElement&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color:#eeffff;&quot;&gt;root&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#82aaff;&quot;&gt;element&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color:#68ac5e;&quot;&gt;&quot;environments&quot;&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;));&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot;color:#fb8647;font-style:italic;&quot;&gt;// &lt;/span&gt;&lt;span style=&quot;color:#fb8647;font-style:italic;font-family:&#39;宋体&#39;,monospace;&quot;&gt;解析映射器&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#fb8647;font-style:italic;font-family:&#39;宋体&#39;,monospace;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot;color:#82aaff;&quot;&gt;mapperElement&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color:#eeffff;&quot;&gt;root&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#82aaff;&quot;&gt;element&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color:#68ac5e;&quot;&gt;&quot;mappers&quot;&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;));&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color:#527c4c;&quot;&gt;} &lt;/span&gt;&lt;span style=&quot;color:#fb8647;font-style:italic;&quot;&gt;catch &lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;Exception &lt;/span&gt;&lt;span style=&quot;color:#e552ff;&quot;&gt;e&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;) &lt;/span&gt;&lt;span style=&quot;color:#527c4c;&quot;&gt;{&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#527c4c;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot;color:#fb8647;font-style:italic;&quot;&gt;throw new &lt;/span&gt;&lt;span style=&quot;color:#82aaff;&quot;&gt;RuntimeException&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color:#68ac5e;&quot;&gt;&quot;Error parsing SQL Mapper&quot;&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;);&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color:#527c4c;&quot;&gt;}&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#527c4c;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color:#fb8647;font-style:italic;&quot;&gt;return &lt;/span&gt;&lt;span style=&quot;color:#eeffff;&quot;&gt;configuration&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#527c4c;&quot;&gt;}&lt;/span&gt;&lt;/pre&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-980" y="450" width="560" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-20" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=0.006;exitY=0.213;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.002;entryY=0.313;entryDx=0;entryDy=0;fillColor=#a20025;strokeColor=#6F0000;entryPerimeter=0;" edge="1" parent="1" source="7CbhMVBoUjyMyCIt36Ix-15" target="7CbhMVBoUjyMyCIt36Ix-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-440" y="400" as="sourcePoint" />
+            <mxPoint x="-390" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-21" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=0.004;exitY=0.461;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.857;entryY=0.533;entryDx=0;entryDy=0;fillColor=#a20025;strokeColor=#6F0000;entryPerimeter=0;" edge="1" parent="1" source="7CbhMVBoUjyMyCIt36Ix-14" target="7CbhMVBoUjyMyCIt36Ix-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-284" y="729" as="sourcePoint" />
+            <mxPoint x="-460" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-22" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 20px;&quot;&gt;4. 创建 SqlSessionFactory 接口以及 DefaultSqlSessionFactory&lt;br&gt;搭配核心方法 openSession，开启一个会话：&lt;br&gt;a. 加载环境资源 b. 配置事务隔离级别 c. 创建执行器 d. 调用底层 DefaultSqlSession&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="170" y="655" width="770" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-23" value="&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 20px;&quot;&gt;工厂模式包装服务&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="770" y="655" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-24" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 20px;&quot;&gt;5. 创建 SqlSession 接口以及 DefaultSqlSession&lt;br&gt;获取映射器、configuration、基本 crud 的集成 ( selectOne、selectList...)&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="170" y="780" width="690" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-25" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 20px;&quot;&gt;6. 创建执行器 Executor 接口和实现类 SimpleExecutor、PrepareExecutor&lt;br&gt;封装底层 JDBC 方法，加载数据库配置信息、SQL 配置信息&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="170" y="870" width="700" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
