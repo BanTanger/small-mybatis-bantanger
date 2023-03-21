@@ -10,7 +10,6 @@ import java.util.Set;
 
 /**
  * 映射器注册机
- *
  * @author BanTanger 半糖
  * @Date 2023/3/10 18:25
  */
@@ -33,6 +32,7 @@ public class MapperRegistry {
             throw new RuntimeException("Type " + type + "is not known to the MapperRegister.");
         }
         try {
+            // 代理工厂获取代理对象
             return mapperProxyFactory.newInstance(sqlSession);
         } catch (Exception e) {
             throw new RuntimeException("Error getting mapper instance. Cause: " + e, e);

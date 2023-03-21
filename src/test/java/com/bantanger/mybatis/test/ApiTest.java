@@ -1,5 +1,7 @@
 package com.bantanger.mybatis.test;
 
+import cn.hutool.core.date.DateTime;
+import cn.hutool.system.SystemUtil;
 import com.alibaba.fastjson.JSON;
 import com.bantanger.mybatis.build.xml.XMLConfigBuilder;
 import com.bantanger.mybatis.dataSource.pooled.PooledDataSource;
@@ -18,7 +20,10 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 import java.io.Reader;
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.SQLException;
+import java.sql.Timestamp;
+import java.util.List;
 
 /**
  * @author BanTanger 半糖
@@ -29,37 +34,20 @@ public class ApiTest {
     private Logger logger = LoggerFactory.getLogger(ApiTest.class);
 
     @Test
-    public void test_SqlSessionFactory() throws IOException {
-        // 1. 从SqlSessionFactory中获取SqlSession
+    public void test_sqlSessionFactory() throws Exception {
+        // 1. 从 SqlSessionFactory 中获取 SqlSession
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder()
+                // 将核心配置文件通过流方式进行加载，解析交付给 SqlSessionFactory
                 .build(Resources.getResourceAsReader("mybatis-config-datasource.xml"));
+
         SqlSession sqlSession = sqlSessionFactory.openSession();
 
-        // 2. 获取映射器对象
+        // 2. 获取映射器对象(代理对象)
         IUserDao userDao = sqlSession.getMapper(IUserDao.class);
 
         // 3. 测试验证
-        for (int i = 0; i < 50; i++) {
-            User user = userDao.queryUserInfoById(1L);
-            logger.info("测试结果：{} i = {}", JSON.toJSONString(user), i);
-        }
-    }
-
-    @Test
-    public void test_pooled() throws SQLException, InterruptedException {
-        PooledDataSource pooledDataSource = new PooledDataSource();
-        pooledDataSource.setDriver("com.mysql.jdbc.Driver");
-        pooledDataSource.setUrl("jdbc:mysql://127.0.0.1:3306/jdbc?useUnicode=true");
-        pooledDataSource.setUsername("root");
-        pooledDataSource.setPassword("123456");
-        // 持续获得连接
-        while(true) {
-            Connection connection = pooledDataSource.getConnection();
-            System.out.println(connection);
-            Thread.sleep(1000);
-            // 是否关闭连接
-//            connection.close();
-        }
+        User user = userDao.queryUserInfoById(10001L);
+        logger.info("测试结果 {}", JSON.toJSONString(user));
     }
 
 }

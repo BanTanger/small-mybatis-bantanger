@@ -18,6 +18,10 @@ public class MapperProxy<T> implements InvocationHandler, Serializable {
 
     private SqlSession sqlSession;
     private final Class<T> mapperInterface;
+    /**
+     * 将方法缓存到内存中，节省资源开销，因为数据库方法调用无非也就那几个
+     * selectOne、selectList、Update、Delete、Insert
+     */
     private final Map<Method, MapperMethod> methodCache;
 
     public MapperProxy(SqlSession sqlSession, Map<Method, MapperMethod> methodCache, Class<T> mapperInterface) {
@@ -26,6 +30,9 @@ public class MapperProxy<T> implements InvocationHandler, Serializable {
         this.methodCache = methodCache;
     }
 
+    /**
+     * 通过反射调用各种方法
+     */
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         if (Object.class.equals(method.getDeclaringClass())) {
@@ -43,7 +50,7 @@ public class MapperProxy<T> implements InvocationHandler, Serializable {
     private MapperMethod cachedMapperMethod(Method method) {
         MapperMethod mapperMethod = methodCache.get(method);
         if (mapperMethod == null) {
-            //找不到才去new
+            //找不到才去 new
             mapperMethod = new MapperMethod(mapperInterface, method, sqlSession.getConfiguration());
             methodCache.put(method, mapperMethod);
         }
