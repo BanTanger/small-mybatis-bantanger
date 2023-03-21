@@ -1,13 +1,8 @@
-package com.bantanger.mybatis.session.defaults;
+package com.bantanger.mybatis.executor.resultset;
 
 import com.bantanger.mybatis.executor.Executor;
 import com.bantanger.mybatis.mapping.BoundSql;
-import com.bantanger.mybatis.mapping.Environment;
 import com.bantanger.mybatis.mapping.MappedStatement;
-import com.bantanger.mybatis.session.Configuration;
-import com.bantanger.mybatis.session.SqlSession;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.lang.reflect.Method;
 import java.sql.*;
@@ -16,35 +11,25 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * 默认实现 SqlSession
+ * 默认 Map 结果处理器
  * @author BanTanger 半糖
- * @Date 2023/3/10 18:37
+ * @Date 2023/3/19 23:31
  */
-public class DefaultSqlSession implements SqlSession {
+public class DefaultResultSetHandler implements ResultSetHandler {
 
-    private final Logger logger = LoggerFactory.getLogger(DefaultSqlSession.class);
+    private final BoundSql boundSql;
 
-    private Configuration configuration;
-    private Executor executor;
-
-    public DefaultSqlSession(Configuration configuration, Executor executor) {
-        this.configuration = configuration;
-        this.executor = executor;
+    public DefaultResultSetHandler(Executor executor, MappedStatement mappedStatement, BoundSql boundSql) {
+        this.boundSql = boundSql;
     }
 
     @Override
-    public <T> T selectOne(String statement) {
-        return (T) ("你被代理了！" + statement);
-    }
-
-    @Override
-    public <T> T selectOne(String statement, Object parameter) {
-        MappedStatement ms = configuration.getMappedStatement(statement);
-        List<T> list = executor.query(ms, parameter, Executor.NO_RESULT_HANDLER, ms.getBoundSql());
+    public <E> List<E> handleResultSets(Statement stmt) throws SQLException {
+        ResultSet resultSet = stmt.getResultSet();
         try {
-            return list.get(0);
-        } catch (Exception e) {
-            logger.info("库表中未查询到结果");
+            return resultSet2Obj(resultSet, Class.forName(boundSql.getResultType()));
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
             return null;
         }
     }
@@ -75,16 +60,6 @@ public class DefaultSqlSession implements SqlSession {
             e.printStackTrace();
         }
         return list;
-    }
-
-    @Override
-    public Configuration getConfiguration() {
-        return configuration;
-    }
-
-    @Override
-    public <T> T getMapper(Class<T> type) {
-        return configuration.getMapper(type, this);
     }
 
 }
