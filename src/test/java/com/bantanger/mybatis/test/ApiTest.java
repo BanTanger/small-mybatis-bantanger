@@ -1,12 +1,24 @@
 package com.bantanger.mybatis.test;
 
-import com.bantanger.mybatis.binding.MapperProxyFactory;
+import com.alibaba.fastjson.JSON;
+import com.bantanger.mybatis.build.xml.XMLConfigBuilder;
+import com.bantanger.mybatis.dataSource.pooled.PooledDataSource;
+import com.bantanger.mybatis.io.Resources;
+import com.bantanger.mybatis.session.Configuration;
+import com.bantanger.mybatis.session.SqlSession;
+import com.bantanger.mybatis.session.SqlSessionFactory;
+import com.bantanger.mybatis.session.SqlSessionFactoryBuilder;
+import com.bantanger.mybatis.session.defaults.DefaultSqlSession;
 import com.bantanger.mybatis.test.dao.IUserDao;
+import com.bantanger.mybatis.test.po.User;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.HashMap;
+import java.io.IOException;
+import java.io.Reader;
+import java.sql.Connection;
+import java.sql.SQLException;
 
 /**
  * @author BanTanger 半糖
@@ -17,16 +29,17 @@ public class ApiTest {
     private Logger logger = LoggerFactory.getLogger(ApiTest.class);
 
     @Test
-    public void test_MapperProxyFactory() {
-        MapperProxyFactory<IUserDao> factory = new MapperProxyFactory<>(IUserDao.class);
+    public void test_sqlSessionFactory() throws Exception {
+        // 1. 从 SqlSessionFactory 中获取 SqlSession
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(Resources.getResourceAsReader("mybatis-config-datasource.xml"));
+        SqlSession sqlSession = sqlSessionFactory.openSession();
 
-        HashMap<String, String> sqlSession = new HashMap<>();
-        sqlSession.put("com.bantanger.mybatis.test.dao.IUserDao.queryUserName", "模拟执行 Mapper.xml 中 SQL 语句的操作：查询用户姓名");
-        sqlSession.put("com.bantanger.mybatis.test.dao.IUserDao.queryUserAge", "模拟执行 Mapper.xml 中 SQL 语句的操作：查询用户年龄");
-        IUserDao userDao = factory.newInstance(sqlSession);
+        // 2. 获取映射器对象
+        IUserDao userDao = sqlSession.getMapper(IUserDao.class);
 
-        String res = userDao.queryUserName("10001");
-        logger.info("测试结果：{}", res);
+        // 3. 测试验证
+        User user = userDao.queryUserInfoById(10001L);
+        logger.info("测试结果 {}", JSON.toJSONString(user));
     }
 
 }
