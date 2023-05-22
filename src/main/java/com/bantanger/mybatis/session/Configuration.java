@@ -110,6 +110,10 @@ public class Configuration {
 
     /**
      * 创建结果集处理器
+     * @return
+     * @param executor
+     * @param mappedStatement
+     * @param boundSql
      */
     public ResultSetHandler newResultSetHandler(Executor executor, MappedStatement mappedStatement, BoundSql boundSql) {
         return new DefaultResultSetHandler(executor, mappedStatement, boundSql);

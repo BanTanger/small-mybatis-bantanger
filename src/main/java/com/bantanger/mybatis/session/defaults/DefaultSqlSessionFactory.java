@@ -1,5 +1,6 @@
 package com.bantanger.mybatis.session.defaults;
 
+import com.bantanger.mybatis.binding.MapperRegistry;
 import com.bantanger.mybatis.executor.Executor;
 import com.bantanger.mybatis.mapping.Environment;
 import com.bantanger.mybatis.session.Configuration;
@@ -40,7 +41,6 @@ public class DefaultSqlSessionFactory implements SqlSessionFactory {
 
             // 创建 DefaultSqlSession
             return new DefaultSqlSession(configuration, executor);
-
         } catch (Exception e) {
             try {
                 assert tx != null;

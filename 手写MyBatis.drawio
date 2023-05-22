@@ -1,0 +1,268 @@
+<mxfile host="app.diagrams.net" modified="2023-03-21T08:37:26.810Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="D9tfz14yexnzXajA4W6M" version="21.0.8" type="github" pages="3">
+  <diagram name="第 1 页" id="uOfneBi-ThzCcZW6oW6N">
+    <mxGraphModel dx="1434" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="y6uFckiS-_iWqt-pdFK--19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;" parent="1" source="y6uFckiS-_iWqt-pdFK--1" target="y6uFckiS-_iWqt-pdFK--16" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y6uFckiS-_iWqt-pdFK--1" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=6;" parent="1" vertex="1">
+          <mxGeometry x="70" y="80" width="450" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="y6uFckiS-_iWqt-pdFK--2" value="&lt;b&gt;参数映射&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="90" y="100" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y6uFckiS-_iWqt-pdFK--3" value="&lt;b&gt;SQL解析&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="200" y="100" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y6uFckiS-_iWqt-pdFK--4" value="&lt;b&gt;SQL执行&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="310" y="100" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y6uFckiS-_iWqt-pdFK--5" value="&lt;b&gt;结果映射&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="420" y="100" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="y6uFckiS-_iWqt-pdFK--9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="y6uFckiS-_iWqt-pdFK--6" target="y6uFckiS-_iWqt-pdFK--1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y6uFckiS-_iWqt-pdFK--6" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=5;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="570" y="80" width="110" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="y6uFckiS-_iWqt-pdFK--7" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/competitive-strategy-and-corporate-training/512/171_Consumption_resource_energy_factory_manufacturing_network_cloud_smart_computing-128.png" parent="1" vertex="1">
+          <mxGeometry x="588" y="86" width="74" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="y6uFckiS-_iWqt-pdFK--8" value="&lt;b&gt;SqlSession工厂&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="570" y="150" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="y6uFckiS-_iWqt-pdFK--23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="y6uFckiS-_iWqt-pdFK--10" target="y6uFckiS-_iWqt-pdFK--6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="y6uFckiS-_iWqt-pdFK--10" value="" style="rounded=1;whiteSpace=wrap;html=1;arcSize=5;" parent="1" vertex="1">
+          <mxGeometry x="570" y="220" width="110" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="y6uFckiS-_iWqt-pdFK--11" value="&lt;b&gt;映射接口调用&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="575" y="280" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="y6uFckiS-_iWqt-pdFK--15" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/other/API_Proxy.svg;" parent="1" vertex="1">
+          <mxGeometry x="591" y="241" width="68" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="y6uFckiS-_iWqt-pdFK--18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.799;entryY=0.99;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="y6uFckiS-_iWqt-pdFK--16" target="y6uFckiS-_iWqt-pdFK--1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="179" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y6uFckiS-_iWqt-pdFK--21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="y6uFckiS-_iWqt-pdFK--16" target="y6uFckiS-_iWqt-pdFK--20" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="330" y="265" />
+              <mxPoint x="330" y="265" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="y6uFckiS-_iWqt-pdFK--16" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#3F8624;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.elastic_file_system_one_zone;" parent="1" vertex="1">
+          <mxGeometry x="425" y="220" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="y6uFckiS-_iWqt-pdFK--17" value="&lt;b&gt;JDBC&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="430" y="285" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="y6uFckiS-_iWqt-pdFK--20" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#2E27AD;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.rds_mysql_instance;" parent="1" vertex="1">
+          <mxGeometry x="92" y="226" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="y6uFckiS-_iWqt-pdFK--22" value="连接数据库" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="230" y="235" width="80" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="lpnaVdKlzih3suxOltOd" name="第 2 页">
+    <mxGraphModel dx="1434" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-1" value="SqlSession" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="100" y="100" width="180" height="216" as="geometry" />
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-2" value="&lt;b&gt;对数据库进行定义和处理的类&lt;/b&gt;" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GNdGnbkWdLJ7xPfVVyxb-1" vertex="1">
+          <mxGeometry y="26" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="GNdGnbkWdLJ7xPfVVyxb-1" vertex="1">
+          <mxGeometry y="52" width="180" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-8" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;~ close()&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GNdGnbkWdLJ7xPfVVyxb-1" vertex="1">
+          <mxGeometry y="60" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-4" value="~ selectOne(String statement)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GNdGnbkWdLJ7xPfVVyxb-1" vertex="1">
+          <mxGeometry y="86" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-6" value="~ selectList(String statement)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GNdGnbkWdLJ7xPfVVyxb-1" vertex="1">
+          <mxGeometry y="112" width="180" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-5" value="~ selectOne(String statement, Object parameter)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GNdGnbkWdLJ7xPfVVyxb-1" vertex="1">
+          <mxGeometry y="138" width="180" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-7" value="~ selectList(String statement, Object parameter)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GNdGnbkWdLJ7xPfVVyxb-1" vertex="1">
+          <mxGeometry y="172" width="180" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-14" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;dashed=1;endFill=0;endSize=12;" parent="1" source="GNdGnbkWdLJ7xPfVVyxb-9" target="GNdGnbkWdLJ7xPfVVyxb-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-33" value="组合" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="GNdGnbkWdLJ7xPfVVyxb-14" vertex="1" connectable="0">
+          <mxGeometry x="-0.2741" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-27" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;align=left;verticalAlign=top;endFill=1;" parent="1" source="GNdGnbkWdLJ7xPfVVyxb-9" target="GNdGnbkWdLJ7xPfVVyxb-19" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="449" />
+              <mxPoint x="350" y="293" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-34" value="关联" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="GNdGnbkWdLJ7xPfVVyxb-27" vertex="1" connectable="0">
+          <mxGeometry x="0.0745" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-9" value="DefaultSqlSession" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="100" y="370" width="180" height="158" as="geometry" />
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-13" value="SqlSession 默认实现类，实现&lt;br&gt;所有接口方法，包装元素提取、&lt;br&gt;数据库连接、JDBC 执行，完成&lt;br&gt;SQL语句执行入参、出参处理" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="GNdGnbkWdLJ7xPfVVyxb-9" vertex="1">
+          <mxGeometry y="26" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="GNdGnbkWdLJ7xPfVVyxb-9" vertex="1">
+          <mxGeometry y="96" width="180" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-10" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;- connection: Connection&lt;br&gt;- mapperElement: Map&amp;lt;String, XNode&amp;gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GNdGnbkWdLJ7xPfVVyxb-9" vertex="1">
+          <mxGeometry y="104" width="180" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-15" value="SqlSessionFactory" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="414" y="100" width="176" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-17" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="GNdGnbkWdLJ7xPfVVyxb-15" vertex="1">
+          <mxGeometry y="26" width="176" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-18" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;~ openSession()&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GNdGnbkWdLJ7xPfVVyxb-15" vertex="1">
+          <mxGeometry y="34" width="176" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-28" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;dashed=1;endFill=0;endSize=12;" parent="1" source="GNdGnbkWdLJ7xPfVVyxb-19" target="GNdGnbkWdLJ7xPfVVyxb-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-32" value="实现" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="GNdGnbkWdLJ7xPfVVyxb-28" vertex="1" connectable="0">
+          <mxGeometry x="-0.2468" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-30" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=diamondThin;endFill=1;endSize=24;" parent="1" source="GNdGnbkWdLJ7xPfVVyxb-19" target="GNdGnbkWdLJ7xPfVVyxb-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-31" value="组合" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="GNdGnbkWdLJ7xPfVVyxb-30" vertex="1" connectable="0">
+          <mxGeometry x="-0.2443" relative="1" as="geometry">
+            <mxPoint y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-19" value="DefaultSqlSessionFactory" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="409" y="220" width="186" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-35" value="开启会话的工厂处理类，&lt;br&gt;操作 DefaultSqlSession" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="GNdGnbkWdLJ7xPfVVyxb-19" vertex="1">
+          <mxGeometry y="26" width="186" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-36" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="GNdGnbkWdLJ7xPfVVyxb-19" vertex="1">
+          <mxGeometry y="66" width="186" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-20" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;- configuration: Configuration&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GNdGnbkWdLJ7xPfVVyxb-19" vertex="1">
+          <mxGeometry y="74" width="186" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-21" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="GNdGnbkWdLJ7xPfVVyxb-19" vertex="1">
+          <mxGeometry y="100" width="186" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-22" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;~ openSession()&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GNdGnbkWdLJ7xPfVVyxb-19" vertex="1">
+          <mxGeometry y="108" width="186" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-23" value="SqlSessionFactoryBuilder" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="409" y="442" width="186" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-24" value="处理工厂、解析文件、获取会话" style="text;strokeColor=none;fillColor=none;align=center;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GNdGnbkWdLJ7xPfVVyxb-23" vertex="1">
+          <mxGeometry y="26" width="186" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-25" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="GNdGnbkWdLJ7xPfVVyxb-23" vertex="1">
+          <mxGeometry y="52" width="186" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="GNdGnbkWdLJ7xPfVVyxb-26" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;+ build(Reader reader)&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="GNdGnbkWdLJ7xPfVVyxb-23" vertex="1">
+          <mxGeometry y="60" width="186" height="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="cABLiSkT23ZcIkIfKkNs" name="第 3 页">
+    <mxGraphModel dx="3860" dy="1163" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-1" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 20px;&quot;&gt;手写持久层框架 MyBatis 思路分析&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-260" y="120" width="1230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-2" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;用户需配置、引入自定义层的 jar 包&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="-260" y="190" width="380" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-3" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 20px;&quot;&gt;自定义持久层框架本身，底层是对 JDBC 的封装调用&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="130" y="190" width="840" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-4" value="&lt;font face=&quot;Comic Sans MS&quot;&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;arcSize=4;" vertex="1" parent="1">
+          <mxGeometry x="-260" y="260" width="380" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-7" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;arcSize=2;" vertex="1" parent="1">
+          <mxGeometry x="130" y="260" width="840" height="700" as="geometry" />
+        </mxCell>
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-9" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 20px;&quot;&gt;1.加载配置文件&lt;br&gt;创建 Resource 类：负责加载配置文件，将文件加载成字节输入流，存入到内存中&lt;br&gt;方法：InputStream.getResourceAsStream(String path)&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="170" y="270" width="740" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-10" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 20px;&quot;&gt;2.创建两个 Bean 对象&lt;br&gt;Configuration：全局配置类，存储 mybatis-config-datasource 总配置文件解析的内容&lt;br&gt;MappedStatement: 映射配置类，存储 mapper.xml 配置文件所解析出来的内容&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="170" y="370" width="790" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-11" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 20px;&quot;&gt;3. 解析配置文件，填充容器对象&lt;br&gt;创建 SqlSessionFactoryBuilder 类，&lt;br&gt;通过字节流传输的方式，将解析的内容存储到 SqlSession 中&lt;br&gt;方法：SqlSessionFactory.build(InputStream)&lt;br&gt;1). 解析配置文件（dom4j + xpath），将信息存储到 Configuration 中&lt;br&gt;2). 创建 SqlSessionFactory&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="170" y="480" width="640" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-14" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;2).创建各种 mapper.xml 配置文件&lt;br style=&quot;border-color: var(--border-color); font-family: &amp;quot;Comic Sans MS&amp;quot;;&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;Comic Sans MS&amp;quot;;&quot;&gt;存放 sql 信息、参数类型、返回值类型&lt;/span&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-255" y="670" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-15" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 20px;&quot;&gt;1). 创建 mybatis-config-datasource &lt;br&gt;总配置文件,包含数据库配置信息：&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;username、passward、url、driver&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;以及各种 mapper.xml 配置文件&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-245" y="390" width="350" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-17" value="&lt;pre style=&quot;background-color:#263238;color:#c3cee3;font-family:&#39;DejaVu Sans Mono&#39;,monospace;font-size:13.5pt;&quot;&gt;&lt;span style=&quot;color:#fb8647;font-style:italic;&quot;&gt;public &lt;/span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;Configuration &lt;/span&gt;&lt;span style=&quot;color:#82aaff;&quot;&gt;parse&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;() &lt;/span&gt;&lt;span style=&quot;color:#527c4c;&quot;&gt;{&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#527c4c;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color:#fb8647;font-style:italic;&quot;&gt;try &lt;/span&gt;&lt;span style=&quot;color:#527c4c;&quot;&gt;{&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#527c4c;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot;color:#fb8647;font-style:italic;&quot;&gt;// &lt;/span&gt;&lt;span style=&quot;color:#fb8647;font-style:italic;font-family:&#39;宋体&#39;,monospace;&quot;&gt;环境&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#fb8647;font-style:italic;font-family:&#39;宋体&#39;,monospace;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot;color:#82aaff;&quot;&gt;environmentsElement&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color:#eeffff;&quot;&gt;root&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#82aaff;&quot;&gt;element&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color:#68ac5e;&quot;&gt;&quot;environments&quot;&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;));&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot;color:#fb8647;font-style:italic;&quot;&gt;// &lt;/span&gt;&lt;span style=&quot;color:#fb8647;font-style:italic;font-family:&#39;宋体&#39;,monospace;&quot;&gt;解析映射器&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#fb8647;font-style:italic;font-family:&#39;宋体&#39;,monospace;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot;color:#82aaff;&quot;&gt;mapperElement&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color:#eeffff;&quot;&gt;root&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;.&lt;/span&gt;&lt;span style=&quot;color:#82aaff;&quot;&gt;element&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color:#68ac5e;&quot;&gt;&quot;mappers&quot;&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;));&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color:#527c4c;&quot;&gt;} &lt;/span&gt;&lt;span style=&quot;color:#fb8647;font-style:italic;&quot;&gt;catch &lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color:#ffffff;&quot;&gt;Exception &lt;/span&gt;&lt;span style=&quot;color:#e552ff;&quot;&gt;e&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;) &lt;/span&gt;&lt;span style=&quot;color:#527c4c;&quot;&gt;{&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#527c4c;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot;color:#fb8647;font-style:italic;&quot;&gt;throw new &lt;/span&gt;&lt;span style=&quot;color:#82aaff;&quot;&gt;RuntimeException&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color:#68ac5e;&quot;&gt;&quot;Error parsing SQL Mapper&quot;&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;);&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color:#527c4c;&quot;&gt;}&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#527c4c;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;color:#fb8647;font-style:italic;&quot;&gt;return &lt;/span&gt;&lt;span style=&quot;color:#eeffff;&quot;&gt;configuration&lt;/span&gt;&lt;span style=&quot;color:#89ddff;&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#527c4c;&quot;&gt;}&lt;/span&gt;&lt;/pre&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-980" y="450" width="560" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-20" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=0.006;exitY=0.213;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.002;entryY=0.313;entryDx=0;entryDy=0;fillColor=#a20025;strokeColor=#6F0000;entryPerimeter=0;" edge="1" parent="1" source="7CbhMVBoUjyMyCIt36Ix-15" target="7CbhMVBoUjyMyCIt36Ix-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-440" y="400" as="sourcePoint" />
+            <mxPoint x="-390" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-21" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=0.004;exitY=0.461;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.857;entryY=0.533;entryDx=0;entryDy=0;fillColor=#a20025;strokeColor=#6F0000;entryPerimeter=0;" edge="1" parent="1" source="7CbhMVBoUjyMyCIt36Ix-14" target="7CbhMVBoUjyMyCIt36Ix-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-284" y="729" as="sourcePoint" />
+            <mxPoint x="-460" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-22" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 20px;&quot;&gt;4. 创建 SqlSessionFactory 接口以及 DefaultSqlSessionFactory&lt;br&gt;搭配核心方法 openSession，开启一个会话：&lt;br&gt;a. 加载环境资源 b. 配置事务隔离级别 c. 创建执行器 d. 调用底层 DefaultSqlSession&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="170" y="655" width="770" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-23" value="&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 20px;&quot;&gt;工厂模式包装服务&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="770" y="655" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-24" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 20px;&quot;&gt;5. 创建 SqlSession 接口以及 DefaultSqlSession&lt;br&gt;获取映射器、configuration、基本 crud 的集成 ( selectOne、selectList...)&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="170" y="780" width="690" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7CbhMVBoUjyMyCIt36Ix-25" value="&lt;font face=&quot;Comic Sans MS&quot; style=&quot;font-size: 20px;&quot;&gt;6. 创建执行器 Executor 接口和实现类 SimpleExecutor、PrepareExecutor&lt;br&gt;封装底层 JDBC 方法，加载数据库配置信息、SQL 配置信息&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="170" y="870" width="700" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

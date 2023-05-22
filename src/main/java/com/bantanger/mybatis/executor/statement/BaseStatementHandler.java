@@ -45,7 +45,6 @@ public abstract class BaseStatementHandler implements StatementHandler {
         try {
             // 实例化 Statement
             statement = instantiateStatement(connection);
-
             // 参数设置，可以被抽取，提供配置
             statement.setQueryTimeout(350);
             statement.setFetchSize(10000);

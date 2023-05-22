@@ -22,7 +22,6 @@ public abstract class BaseExecutor implements Executor {
     /*
      * 将对象设置成全局，便于后续 close 方法释放资源
      */
-
     protected Configuration configuration;
     protected Transaction transaction;
     protected Executor wrapper;
