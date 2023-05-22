@@ -19,6 +19,9 @@ public abstract class BaseExecutor implements Executor {
 
     private final Logger logger = LoggerFactory.getLogger(BaseExecutor.class);
 
+    /*
+     * 将对象设置成全局，便于后续 close 方法释放资源
+     */
     protected Configuration configuration;
     protected Transaction transaction;
     protected Executor wrapper;
@@ -39,6 +42,9 @@ public abstract class BaseExecutor implements Executor {
         return doQuery(ms, parameter, handler, boundSql);
     }
 
+    /**
+     * 执行器底层执行 JDBC 代码
+     */
     protected abstract <E> List<E> doQuery(MappedStatement ms, Object parameter, ResultHandler handler, BoundSql boundSql);
 
     @Override

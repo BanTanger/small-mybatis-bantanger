@@ -11,6 +11,14 @@ import java.util.List;
  */
 public interface ResultSetHandler {
 
+    /**
+     * 通过反射技术实现
+     * 根据字段名和实体属性名对应关系自动完成映射封装
+     * @param stmt
+     * @param <E>
+     * @return
+     * @throws SQLException
+     */
     <E> List<E> handleResultSets(Statement stmt) throws SQLException;
 
 }

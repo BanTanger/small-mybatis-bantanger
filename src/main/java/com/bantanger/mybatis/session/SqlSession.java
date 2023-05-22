@@ -1,5 +1,7 @@
 package com.bantanger.mybatis.session;
 
+import java.util.List;
+
 /**
  * SqlSession 用于执行 SQL，获取映射器，管理事务
  * 通常情况下，在应用程序中使用的 MyBatis 的 API 就是这个接口定义的
@@ -11,7 +13,8 @@ package com.bantanger.mybatis.session;
 public interface SqlSession {
 
     /**
-     * 根据指定的 SqlID 获取一条记录的封装对象
+     * 查询单个结果
+     * 根据指定的 statementId 获取一条记录的封装对象
      * @param statement sqlID
      * @param <T> 封装之后的对象类型
      * @return Mapper Object 封装之后的对象
@@ -19,7 +22,8 @@ public interface SqlSession {
     <T> T selectOne(String statement);
 
     /**
-     * 根据指定的 sqlID 获取一条记录的封装对象，只不过这个方法允许我们传递一些参数给 sql
+     * 查询单个结果
+     * 根据指定的 statementId 获取一条记录的封装对象，只不过这个方法允许我们传递一些参数给 sql
      * 在一般的使用中，这个参数用于传递 pojo，Map 或者 ImmutableMap
      * @param statement
      * @param parameter

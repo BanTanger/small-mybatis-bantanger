@@ -18,6 +18,9 @@ public interface Executor {
 
     ResultHandler NO_RESULT_HANDLER = null;
 
+    /**
+     * 执行底层 JDBC 封装好的接口
+     */
     <E> List<E> query(MappedStatement ms, Object parameter, ResultHandler handler, BoundSql boundSql);
 
     Transaction getTransaction();

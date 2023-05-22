@@ -14,11 +14,24 @@ public class SqlSessionFactoryBuilder {
 
     /**
      * 解析配置文件（dom4j + xpath），封装 Configuration
+     * configuration 作为传参向下传递
      * @param reader
      * @return
      */
     public SqlSessionFactory build(Reader reader) {
         XMLConfigBuilder xmlConfigBuilder = new XMLConfigBuilder(reader);
+        /*
+         * <mappers>
+         *     <mapper resource="mapper/User_Mapper.xml"/>
+         *     <mapper resource="mapper/UserDao_Mapper.xml"/>
+         *     <mapper resource="mapper/Student_Mapper.xml"/>
+         * </mappers>
+         *
+         * xmlConfigBuilder.parse() 将 xml 里的 mappers 标签和 environment 标签进行解析，
+         * 并将其封装成 mappedStatements 对象集合存放到 Configuration 里
+         *
+         * <mappers> <==> Map<String, MappedStatement> mappedStatements
+         */
         return build(xmlConfigBuilder.parse());
     }
 

@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="small-mybatis-bantanger" />
         <module name="Small-MyBatis-BanTanger" />
       </profile>
     </annotationProcessing>

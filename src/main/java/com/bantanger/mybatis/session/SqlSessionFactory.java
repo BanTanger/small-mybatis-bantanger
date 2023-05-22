@@ -8,7 +8,8 @@ package com.bantanger.mybatis.session;
 public interface SqlSessionFactory {
 
     /**
-     * 生产一个 session
+     * 1. 生产一个 sqlSession 对象
+     * 2. 创建执行器对象
      * @return
      */
     SqlSession openSession();

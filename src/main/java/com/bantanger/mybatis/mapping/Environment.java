@@ -12,8 +12,24 @@ import javax.sql.DataSource;
  */
 public class Environment {
 
+    /*
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+<!--            <dataSource type="UNPOOLED">-->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://127.0.0.1:3306/jdbc?useUnicode=true"/>
+                <property name="username" value="root"/>
+                <property name="password" value="123456"/>
+            </dataSource>
+        </environment>
+    </environments>
+     */
+
     /**
      * 环境 ID
+     * 对应 <\environment id="development">
      */
     private final String id;
     /**
@@ -22,6 +38,13 @@ public class Environment {
     private final TransactionFactory transactionFactory;
     /**
      * 数据源
+     * 对应 <\dataSource> 标签
+     * <dataSource type="POOLED"> type 表示选择池化数据源技术，还有 UNPOOLED 无池化技术
+     *      <property name="driver" value="com.mysql.jdbc.Driver"/>
+     *      <property name="url" value="jdbc:mysql://127.0.0.1:3306/jdbc?useUnicode=true"/>
+     *      <property name="username" value="root"/>
+     *      <property name="password" value="123456"/>
+     * </dataSource>
      */
     private final DataSource dataSource;
 

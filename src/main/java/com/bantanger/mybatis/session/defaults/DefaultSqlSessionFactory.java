@@ -31,9 +31,14 @@ public class DefaultSqlSessionFactory implements SqlSessionFactory {
         try {
             final Environment environment = configuration.getEnvironment();
             TransactionFactory transactionFactory = environment.getTransactionFactory();
-            tx = transactionFactory.newTransaction(configuration.getEnvironment().getDataSource(), TransactionIsolationLevel.READ_COMMITTED, false);
-            // 创建执行器
+
+            // 获取 configuration 中 environment 里的数据源对象，并设置事务隔离级别
+            tx = transactionFactory.newTransaction(configuration.getEnvironment().getDataSource(),
+                    TransactionIsolationLevel.READ_COMMITTED, false);
+
+            // 创建执行器，具体的 crud 操作委派给底层的执行器来执行
             Executor executor = configuration.newExecutor(tx);
+
             // 创建 DefaultSqlSession
             return new DefaultSqlSession(configuration, executor);
         } catch (Exception e) {
