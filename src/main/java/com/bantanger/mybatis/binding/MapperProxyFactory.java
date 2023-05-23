@@ -29,6 +29,8 @@ public class MapperProxyFactory<T> {
 
     public T newInstance(SqlSession sqlSession) {
         final MapperProxy<T> mapperProxy = new MapperProxy<>(sqlSession, methodCache, mapperInterface);
+        // 创建代理对象之后，通过代理对象调用的任何方法都会交付给第三个参数 InvocationHandler 也就是这里的 mapperProxy 进行处理
+        // 本质是 InvocationHandler 调用 invoke 方法反射执行代理对象的实际方法
         return (T) Proxy.newProxyInstance(mapperInterface.getClassLoader(), new Class[]{mapperInterface}, mapperProxy);
     }
 

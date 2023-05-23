@@ -35,15 +35,18 @@ public class ApiTest {
 
     @Test
     public void test_sqlSessionFactory() throws Exception {
-        // 1. 从 SqlSessionFactory 中获取 SqlSession
+        // =================可交付 spring 管理 ====================
+        // 1. 将内存里缓存的字节流进行解析
         SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder()
-                // 将核心配置文件通过流方式进行加载，解析交付给 SqlSessionFactory
+                // 通过类加载器将核心配置文件通过字节输入流方式加载到内存，解析交付给 SqlSessionFactory
                 .build(Resources.getResourceAsReader("mybatis-config-datasource.xml"));
 
+            // 从 SqlSessionFactory 中获取 SqlSession
         SqlSession sqlSession = sqlSessionFactory.openSession();
 
         // 2. 获取映射器对象(代理对象)
         IUserDao userDao = sqlSession.getMapper(IUserDao.class);
+        // ======================================================
 
         // 3. 测试验证
         User user = userDao.queryUserInfoById(10001L);

@@ -32,6 +32,11 @@ public class MapperProxy<T> implements InvocationHandler, Serializable {
 
     /**
      * 通过反射调用各种方法
+     * @param proxy 代理对象的引用，很少使用
+     * @param method 被调用方法的字节码对象
+     * @param args 被调用方法的形参列表
+     * @return
+     * @throws Throwable
      */
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
@@ -40,6 +45,8 @@ public class MapperProxy<T> implements InvocationHandler, Serializable {
             return method.invoke(this, args);
         } else {
             final MapperMethod mapperMethod = cachedMapperMethod(method);
+            // 本质还是执行底层 JDBC 方法, 但这里传递 sqlSession, sqlSession 再通过 executor 执行方法
+            // 并通过 mapperMethod 做一层封装
             return mapperMethod.execute(sqlSession, args);
         }
     }

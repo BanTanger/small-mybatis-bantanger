@@ -21,8 +21,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * MyBatis 核心存储对象的配置类
- * 存储 mybatis-config-datasource 解析的内容
+ * MyBatis 核心存储对象的全局配置对象
+ * 存储 mybatis-config-datasource.xml 解析的内容以及 XX_Mapper.xml 的内容
  * @author BanTanger 半糖
  * @Date 2023/3/13 13:00
  */
@@ -53,7 +53,10 @@ public class Configuration {
     protected final Map<String, MappedStatement> mappedStatements = new HashMap<>();
 
     public Configuration() {
+        // 注册事务工厂的别名
         typeAliasRegistry.registerAlias("JDBC", JdbcTransactionFactory.class);
+
+        // 注册数据源的别名
         typeAliasRegistry.registerAlias("DRUID", DruidDataSourceFactory.class);
         typeAliasRegistry.registerAlias("POOLED", PooledDataSourceFactory.class);
         typeAliasRegistry.registerAlias("UNPOOLED", UnpooledDataSourceFactory.class);

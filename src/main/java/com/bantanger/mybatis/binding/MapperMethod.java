@@ -13,6 +13,9 @@ import java.lang.reflect.Method;
  */
 public class MapperMethod {
 
+    /**
+     * 封装 sqlCommand，便于获取 statementId 唯一标识
+     */
     private final SqlCommand command;
 
     public MapperMethod(Class<?> mapperInterface, Method method, Configuration configuration) {
@@ -46,9 +49,13 @@ public class MapperMethod {
         private final SqlCommandType type;
 
         public SqlCommand(Configuration configuration, Class<?> mapperInterface, Method method) {
+            // 拼接 statementName 也就是 statementId
             String statementName = mapperInterface.getName() + "." + method.getName();
+            // 获取具体 mappedStatement 对象
             MappedStatement ms = configuration.getMappedStatement(statementName);
+            // sql 方法名称，就是 method.getName
             name = ms.getId();
+            // sql 的标签类型
             type = ms.getSqlCommandType();
         }
 

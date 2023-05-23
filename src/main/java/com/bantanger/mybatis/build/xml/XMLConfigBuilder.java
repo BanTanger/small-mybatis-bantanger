@@ -120,6 +120,7 @@ public class XMLConfigBuilder extends BaseBuilder {
                 Environment.Builder environmentBuilder = new Environment.Builder(id)
                         .transactionFactory(txFactory)
                         .dataSource(dataSource);
+                // 将 environment 存储到 configuration 中
                 configuration.setEnvironment(environmentBuilder.build());
             }
         }
